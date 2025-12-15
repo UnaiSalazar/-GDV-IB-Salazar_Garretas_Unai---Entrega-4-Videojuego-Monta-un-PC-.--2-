@@ -1,0 +1,16 @@
+{
+	"name": "inicio",
+	"plugin-id": "Text",
+	"sid": 442954563869502,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 509673821143763
+		}
+	],
+	"effectTypes": []
+}

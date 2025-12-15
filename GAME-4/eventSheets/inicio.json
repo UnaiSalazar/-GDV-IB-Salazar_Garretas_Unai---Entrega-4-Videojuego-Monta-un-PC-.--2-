@@ -1,0 +1,28 @@
+{
+	"name": "inicio",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "inicio",
+					"sid": 958190840454364,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 932535577581858,
+					"parameters": {
+						"layout": "Escena 1"
+					}
+				}
+			],
+			"sid": 200544524934193
+		}
+	],
+	"sid": 746805816793395
+}

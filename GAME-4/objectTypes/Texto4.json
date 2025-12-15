@@ -1,0 +1,16 @@
+{
+	"name": "Texto4",
+	"plugin-id": "Text",
+	"sid": 275975442904651,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 623292540116126
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,772 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 110262326041840
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 909963456981099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "PlacaBase",
+					"sid": 396107815749706,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite6",
+					"sid": 383556554760125,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 925906282080959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Alimentacón",
+					"sid": 635303964291456,
+					"parameters": {
+						"text": "\"Fuente de alimentación\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite5",
+					"sid": 840621642655547,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 570623568010388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Disco",
+					"sid": 380340900536462,
+					"parameters": {
+						"text": "\"Tarjeta gráfica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite4",
+					"sid": 128215051606012,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 960934956187370
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "procesador",
+					"sid": 643535790274064,
+					"parameters": {
+						"text": "\"Procesador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite2",
+					"sid": 744059016875544,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 786166228476879
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "RAM",
+					"sid": 726983163427871,
+					"parameters": {
+						"text": "\"Memoria RAM\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite7",
+					"sid": 948938369852932,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 736006385323591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "ventilador",
+					"sid": 795482114944414,
+					"parameters": {
+						"text": "\"Ventilador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite3",
+					"sid": 644798024634498,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 764349651363491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite6",
+					"sid": 583412616268969,
+					"parameters": {
+						"object": "Sprite9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite6",
+					"sid": 740021730172535,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite6",
+					"sid": 902814801658303,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite9",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 385346731120734,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 860110877384442
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite9",
+					"sid": 115601183599642
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite9",
+					"sid": 925766710458723,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 589752402179671
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 180876085798058,
+					"parameters": {
+						"object": "Sprite12"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite2",
+					"sid": 153142401144852,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite2",
+					"sid": 899805932184125,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite12",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 995937607177039,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 956602558938169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite12",
+					"sid": 108493171977731
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite12",
+					"sid": 482757996061612,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 957710521665084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 408289549006116,
+					"parameters": {
+						"object": "Sprite10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite3",
+					"sid": 284662559170051,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite3",
+					"sid": 380688071983251,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite10",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 372941225002832,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 141840341333833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite10",
+					"sid": 886498799202537
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 569780623891922,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 215173317614759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite4",
+					"sid": 496689620585986,
+					"parameters": {
+						"object": "Sprite14"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite4",
+					"sid": 137810469590640,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite4",
+					"sid": 110178017792135,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite14",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 605120620972215,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 256928497331867
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite14",
+					"sid": 892821545813254
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 681763822814325,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 761461477499670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite5",
+					"sid": 958347826217466,
+					"parameters": {
+						"object": "Sprite11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite5",
+					"sid": 249477343553749,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite5",
+					"sid": 960335304177140,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite11",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 664776717968311,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 904325434472057
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite11",
+					"sid": 914989606460389
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite11",
+					"sid": 697096952680037,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 638421526771346
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite7",
+					"sid": 323721875761713,
+					"parameters": {
+						"object": "Sprite13"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite7",
+					"sid": 345816051859916,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite13",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite7",
+					"sid": 574608970294983,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 437431007679808,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 747294458081619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite13",
+					"sid": 215569760265754
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite13",
+					"sid": 796810613469377,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 394821902965881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 706887368670087
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto2",
+					"sid": 126857268012795,
+					"parameters": {
+						"text": " \"PUNTOS: \" & Score"
+					}
+				}
+			],
+			"sid": 283080705762842
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 611655587033272,
+					"parameters": {
+						"variable": "Score",
+						"comparison": 0,
+						"value": "60"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 506424963610079,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 621198718318890,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 139176136173337,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 410865952976769,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 725161428690533,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 776668018747592,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "RAM",
+					"sid": 530409196127556
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Alimentacón",
+					"sid": 492962545520540
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Disco",
+					"sid": 384958022385610
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlacaBase",
+					"sid": 773858262267350
+				},
+				{
+					"id": "destroy",
+					"objectClass": "procesador",
+					"sid": 656441658779313
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto2",
+					"sid": 491626673386490,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ventilador",
+					"sid": 480346831670301
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 554113769968847,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto3",
+					"sid": 746902176365148,
+					"parameters": {
+						"text": "\"¡¡¡Victoria!!!\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto4",
+					"sid": 161551917557589,
+					"parameters": {
+						"text": "\"Reiniciar\""
+					}
+				}
+			],
+			"sid": 801832086652604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Texto4",
+					"sid": 573317740674851,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 204769255618630,
+					"parameters": {
+						"layout": "inicio"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 577448502302140,
+					"parameters": {
+						"variable": "Score",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 144843520174199
+		}
+	],
+	"sid": 223458415806633
+}

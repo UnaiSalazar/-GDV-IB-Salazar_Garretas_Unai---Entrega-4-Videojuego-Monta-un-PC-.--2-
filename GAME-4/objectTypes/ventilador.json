@@ -1,0 +1,9 @@
+{
+	"name": "ventilador",
+	"plugin-id": "TextBox",
+	"sid": 384276148590041,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

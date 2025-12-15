@@ -1,0 +1,16 @@
+{
+	"name": "Texto2",
+	"plugin-id": "Text",
+	"sid": 652109951059724,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Ancla",
+			"sid": 312377340273336
+		}
+	],
+	"effectTypes": []
+}
